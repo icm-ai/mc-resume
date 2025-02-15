@@ -56,8 +56,8 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
             avatarUrl: '/avatar.jpg',
             avatarSize: 86,
             avatarRound: true,
-            name: isChinese ? '炭治郎' : 'Tanjiro',
-            jobTitle: isChinese ? '前端开发工程师' : 'Frontend Developer',
+            name: isChinese ? '陈 明' : 'Ming Chen',
+            jobTitle: isChinese ? '算法工程师' : 'Algorithm Engineer',
             linksGroup: [
               [
                 {

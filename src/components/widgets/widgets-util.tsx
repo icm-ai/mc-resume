@@ -57,7 +57,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
             avatarSize: 86,
             avatarRound: true,
             name: isChinese ? '陈 明' : 'Ming Chen',
-            jobTitle: isChinese ? '算法工程师' : 'Algorithm Engineer',
+            jobTitle: isChinese ? '算法工程师' : 'Machine Learning Engineer',
             linksGroup: [
               [
                 {
@@ -67,19 +67,19 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                 },
                 {
                   href: '',
-                  content: '15123456789',
+                  content: '1771313747',
                   icon: 'phone',
                 },
               ],
               [
                 {
-                  href: 'https://github.com/',
+                  href: 'https://github.com/icm-ai',
                   content: 'github.com',
                   icon: 'github',
                 },
                 {
-                  href: 'mailto:tanjiro@gmail.com',
-                  content: 'tanjiro@gmail.com',
+                  href: 'mailto:bestchenming@gmail.com',
+                  content: 'bestchenming@gmail.com',
                   icon: 'gmail',
                 },
               ],
@@ -128,8 +128,8 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
         data: {
           propsData: {
             content: isChinese
-              ? '<h3>XX项目 - Web 前端开发</h3><ul><li><p>负责从需求分析到前端架构设计、功能开发及性能优化的全流程开发工作。</p></li><li><p>坚持与产品、设计、后端团队紧密协作，推动敏捷开发流程和 CI/CD 工具链的落地，确保高质量的交付。</p></li><li><p>通过深入研究用户体验和前端性能，成功优化支付流程页面，提升了用户转化率和支付成功率。</p></li></ul>'
-              : '<h3>XX Project - Web Frontend Development</h3><ul><li><p>Responsible for the full development process from requirement analysis to frontend architecture design, feature development, and performance optimization.</p></li><li><p>Consistently collaborated with product, design, and backend teams to promote agile development processes and implement CI/CD toolchains, ensuring high-quality delivery.</p></li><li><p>Successfully optimized the payment process page through in-depth research on user experience and frontend performance, improving user conversion and payment success rates.</p></li></ul>',
+              ? '<h3>XX项目 - 高级算法工程师</h3><ul><li><p>负责从需求分析到算法设计、功能开发及性能优化的全流程开发工作。</p></li><li><p>坚持与产品、设计、后端团队紧密协作，推动敏捷开发流程和 CI/CD 工具链的落地，确保高质量的交付。</p></li><li><p>通过深入研究算法效果及性能，成功优化了算法模型，提升了算法的准确性和效率</p></li></ul>'
+              : '<h3>XX Project - Senior Algorithm Engineer</h3><ul><li><p>Led the entire development process from requirement analysis to algorithm design, development, and performance optimization.</p></li><li><p>Strengthened collaboration between product, design, and backend teams. Implemented and deployed CI/CD pipeline and CI/CD tools. Ensured high-quality delivery.</p></li><li><p>Successfully optimized the algorithm model, resulting in improved accuracy and efficiency.</p></li></ul>',
           },
           styleData: {
             marginTop: 0,

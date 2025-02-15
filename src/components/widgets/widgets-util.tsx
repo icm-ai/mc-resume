@@ -71,9 +71,6 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
             jobTitle: isChinese ? '机器学习工程师' : 'Machine Learning Engineer',
             linksGroup: [
               [ 
-
-              ],
-              [
                 {
                   href: '',
                   content: '1771313747',
@@ -89,6 +86,14 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                   content: 'bestchenming@gmail.com',
                   icon: 'gmail',
                 },
+                {
+                  href: "",
+                  content: "意向城市:广州深圳",
+                  icon: "location"
+                }
+              ],
+              [
+                
               ],
               [],
             ],

@@ -1,3 +1,4 @@
+// 导入类型定义和必要的依赖
 import type {
   LinkItemData,
   WidgetMaterial,
@@ -8,29 +9,35 @@ import i18n from '@/i18n'
 import { CalendarRange, Heading, Image, Type, User } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
+// 定义可用的组件材料列表，用于组件拖拽面板
 export const useWidgetMaterialList: () => WidgetMaterial[] = () => {
   const { t } = useTranslation()
   return [
+    // 基本信息组件（头像、姓名等）
     {
       type: 'BasicInfo',
       icon: <User className="icon-size" />,
       title: t('widgets.basicInfo'),
     },
+    // 标题组件（如"工作经验"、"教育背景"等章节标题）
     {
       type: 'TitleSection',
       icon: <Heading className="icon-size" />,
       title: t('widgets.title'),
     },
+    // 时间经历组件（用于显示工作/教育经历的时间段）
     {
       type: 'ExperienceTime',
       icon: <CalendarRange className="icon-size" />,
       title: t('widgets.experience'),
     },
+    // 文本内容组件
     {
       type: 'TextContent',
       icon: <Type className="icon-size" />,
       title: t('widgets.text'),
     },
+    // 图片组件
     {
       type: 'ImageSection',
       icon: <Image className="icon-size" />,
@@ -39,13 +46,17 @@ export const useWidgetMaterialList: () => WidgetMaterial[] = () => {
   ]
 }
 
+// 生成唯一的组件ID，使用时间戳和随机数组合
 export function generateWidgetId(): string {
   return `${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 6)}`
 }
 
+// 根据组件类型创建新的组件节点，包含默认数据
 export function createWidgetsNode(type: WidgetType): WidgetNode {
   const isChinese = i18n.language === 'zh'
   const id = generateWidgetId()
+  
+  // 根据不同类型返回对应的组件配置
   switch (type) {
     case 'BasicInfo':
       return {
@@ -160,6 +171,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
   }
 }
 
+// 创建新的链接项数据
 export const createLinkItem: () => LinkItemData = () => {
   return {
     href: 'https://github.com/',
@@ -168,8 +180,10 @@ export const createLinkItem: () => LinkItemData = () => {
   }
 }
 
+// 创建默认的简历数据，包含基础的组件结构
 export const createDefaultData: () => WidgetNode[] = () => {
   const isChinese = i18n.language === 'zh'
+  // 返回包含默认组件的数组
   return [
     {
       type: 'BasicInfo',
@@ -273,7 +287,7 @@ export const createDefaultData: () => WidgetNode[] = () => {
   ]
 }
 
-// config or pdf file basename (without extname)
+// 根据简历数据生成文件名（用于导出PDF或配置文件）
 export function getBasename(widgets: WidgetNode[]) {
   const basicInfo = widgets.find(item => item.type === 'BasicInfo')
   if (basicInfo) {

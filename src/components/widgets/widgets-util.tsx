@@ -66,26 +66,22 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
           propsData: {
             avatarUrl: '/avatar.jpg',
             avatarSize: 86,
-            avatarRound: true,
+            avatarRound: false,
             name: isChinese ? '陈 明' : 'Ming Chen',
-            jobTitle: isChinese ? '算法工程师' : 'Machine Learning Engineer',
+            jobTitle: isChinese ? '机器学习工程师' : 'Machine Learning Engineer',
             linksGroup: [
+              [ 
+
+              ],
               [
-                {
-                  href: '',
-                  content: '2050/01',
-                  icon: 'cake',
-                },
                 {
                   href: '',
                   content: '1771313747',
                   icon: 'phone',
                 },
-              ],
-              [
                 {
                   href: 'https://github.com/icm-ai',
-                  content: 'github.com',
+                  content: 'icm-ai',
                   icon: 'github',
                 },
                 {

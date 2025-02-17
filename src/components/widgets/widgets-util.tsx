@@ -200,7 +200,7 @@ export const createDefaultData: () => WidgetNode[] = () => {
             [
               {
                 href: '',
-                content: '2050/01',
+                content: '1991/09',
                 icon: 'cake',
               },
               {

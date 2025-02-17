@@ -65,7 +65,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
         data: {
           propsData: {
             avatarUrl: '/avatar.jpg',
-            avatarSize: 86,
+            avatarSize: 68,
             avatarRound: false,
             name: isChinese ? '陈 明' : 'Ming Chen',
             jobTitle: isChinese ? '机器学习工程师' : 'Machine Learning Engineer',
@@ -81,6 +81,9 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                   content: 'icm-ai',
                   icon: 'github',
                 },
+                
+              ],
+              [
                 {
                   href: 'mailto:bestchenming@gmail.com',
                   content: 'bestchenming@gmail.com',
@@ -91,9 +94,6 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                   content: "意向城市:广州深圳",
                   icon: "location"
                 }
-              ],
-              [
-                
               ],
               [],
             ],

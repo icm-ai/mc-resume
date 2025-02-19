@@ -1,3 +1,9 @@
+/*
+ * @Author: MingChen
+ * @Date: 2025-02-15 19:05:56
+ * @LastEditors: MingChen
+ * @LastEditTime: 2025-02-19 16:24:17
+ */
 import type { ExperienceTimeData } from '@/components/widgets/widgets-type.d.ts'
 
 interface ExperienceTimeProps {

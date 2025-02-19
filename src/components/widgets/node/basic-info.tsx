@@ -1,3 +1,9 @@
+/*
+ * @Author: MingChen
+ * @Date: 2025-02-15 19:05:56
+ * @LastEditors: MingChen
+ * @LastEditTime: 2025-02-19 16:29:22
+ */
 import { LinkIconComponent } from '@/components/widgets/link-icon.tsx'
 import type { BasicInfoData } from '@/components/widgets/widgets-type.d.ts'
 import { clsx } from 'clsx'
@@ -10,7 +16,7 @@ const BasicInfo = ({ data }: BasicInfoProps) => {
   const { avatarUrl, avatarSize, avatarRound, name, jobTitle, linksGroup } = data
 
   return (
-    <div className="flex-center py-5">
+    <div className="flex-center py-3">
       {/* Avatar */}
       {avatarUrl ? (
         <img

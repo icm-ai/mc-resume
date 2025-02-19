@@ -175,7 +175,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
 // 创建新的链接项数据
 export const createLinkItem: () => LinkItemData = () => {
   return {
-    href: 'https://github.com/',
+    href: '',
     content: 'github.com',
     icon: 'link',
   }

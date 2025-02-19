@@ -77,7 +77,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                   icon: 'phone',
                 },
                 {
-                  href: 'https://github.com/icm-ai',
+                  href: '',
                   content: 'icm-ai',
                   icon: 'github',
                 },
@@ -85,7 +85,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
               ],
               [
                 {
-                  href: 'mailto:bestchenming@gmail.com',
+                  href: '',
                   content: 'bestchenming@gmail.com',
                   icon: 'gmail',
                 },
@@ -113,8 +113,8 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
             title: isChinese ? '工作经历' : 'Work Experience',
           },
           styleData: {
-            marginTop: 20,
-            marginBottom: 12,
+            marginTop: 6,
+            marginBottom: 6,
           },
         },
       }
@@ -160,8 +160,8 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
             borderRadius: 0,
           },
           styleData: {
-            marginTop: 10,
-            marginBottom: 10,
+            marginTop: 6,
+            marginBottom: 6,
           },
         },
       }
@@ -232,7 +232,7 @@ export const createDefaultData: () => WidgetNode[] = () => {
       id: 'm5nhbbzu_29xe',
 data: {
         propsData: { title: isChinese ? '专业技能' : 'Professional Skills' },
-        styleData: { marginTop: 20, marginBottom: 12 },
+        styleData: { marginTop: 6, marginBottom: 6 },
       },
     },
     {
@@ -252,7 +252,7 @@ data: {
       id: 'm5nh7g2t_m1ad',
       data: {
         propsData: { title: isChinese ? '工作经历' : 'Work Experience' },
-        styleData: { marginTop: 20, marginBottom: 12 },
+        styleData: { marginTop: 6, marginBottom: 6 },
       },
     },
     {

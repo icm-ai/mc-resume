@@ -211,12 +211,12 @@ export const createDefaultData: () => WidgetNode[] = () => {
             ],
             [
               {
-                href: 'https://github.com/icm-ai',
+                href: '',
                 content: 'github.com',
                 icon: 'github',
               },
               {
-                href: 'mailto:bestchenming@gmail.com',
+                href: '',
                 content: 'bestchenming@gmail.com',
                 icon: 'gmail',
               },

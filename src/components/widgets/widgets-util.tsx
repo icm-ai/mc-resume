@@ -91,7 +91,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
                 },
                 {
                   href: "",
-                  content: "意向城市:广州深圳",
+                  content: "DesiredCities:Guangzhou",
                   icon: "location"
                 }
               ],
@@ -193,7 +193,7 @@ export const createDefaultData: () => WidgetNode[] = () => {
         propsData: {
           avatarUrl: '/avatar.jpg',
           avatarSize: 86,
-          avatarRound: true,
+          avatarRound: false,
           name: isChinese ? '陈 明' : 'Ming Chen',
           jobTitle: isChinese ? '算法工程师' : 'Machine Learning Engineer',
           linksGroup: [

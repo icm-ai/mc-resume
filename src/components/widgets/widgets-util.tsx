@@ -73,7 +73,7 @@ export function createWidgetsNode(type: WidgetType): WidgetNode {
               [ 
                 {
                   href: '',
-                  content: '1771313747',
+                  content: '17718313747',
                   icon: 'phone',
                 },
                 {
